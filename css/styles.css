@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Font Families */
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* Font Families */
+
+/* Navigation Section Starts */
+.hamBurger {
+    display: none;
+}
+.nav-div {
+    justify-content: space-between;
+    margin: auto;
+    max-width: 95%;
+    padding: 0.8rem 0;
+}
+
+.nav-ele {
+   list-style-type: none; 
+}
+
+.navigation .flex {
+    gap: 20px;
+}
+
+#navigation {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* Navigation Section Ends */
+
+@media only screen and (max-width: 768px) {
+    /* Navigation Section Starts */
+
+    #navigation {
+        box-shadow: none;
+    }
+
+    .hamBurger {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .dropdown-ele {
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        flex-direction: column;
+        position: fixed;
+    }
+
+    /* Navigation Section Ends */
+}
