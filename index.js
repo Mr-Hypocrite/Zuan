@@ -42,7 +42,7 @@ function horizontalDragCar(container) {
 
 }
 
-let scrollableArr = ['under-banner-cards', 'courses-carousel'];
+let scrollableArr = ['under-banner-cards', 'courses-carousel', 'category-carousel', 'popular-courses-carousel'];
 
 scrollableArr.forEach(element => {
     horizontalDragCar(element);
