@@ -8,3 +8,8 @@
     display: flex;
     justify-content: center;
 }
+
+.z-container {
+    margin: auto;
+    max-width: 90vw;
+}
