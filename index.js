@@ -7,6 +7,51 @@ function hamburger(){
 document.querySelector('.hamBurger').addEventListener('click', hamburger);
 // NavBar Animation DropDown
 
+// Card-Carousel Button
+
+// let leftButton = document.querySelector('.ubc1');
+// let rightButton = document.querySelector('.ubc2');
+// let cardCount = 0;
+// let activeClass = document.querySelector('.u-active');
+// let cards = document.querySelectorAll('.card-flex');
+// let maxCards = cards.length - 1;
+// console.log(leftButton, rightButton, cards[maxCards], cards[0].offsetLeft, cards[0].offsetWidth, activeClass.offsetLeft, maxCards);
+// function moveActiveClass() {
+//     cards.forEach(card => {
+//         card.classList.remove('u-active');
+//     });
+//     cards[cardCount].classList.add('u-active');
+// }
+
+
+
+// function moveLeft() {
+//     (cardCount === 0) ? cardCount = 0 : cardCount--;
+//     moveActiveClass();
+//     if (cards[0].offsetWidth !== activeClass.offsetWidth) {
+//         activeClass = document.querySelector('.u-active');
+//         console.log(activeClass.offsetLeft);
+//         cards[0].style.marginLeft = '+' + activeClass.offsetLeft + 'px';
+//         console.log('left');
+//     }
+// }
+
+// function moveRight() {
+//     (cardCount === maxCards) ? cardCount = maxCards : cardCount++;
+//     moveActiveClass();
+//     if (cards[maxCards].offsetWidth !== activeClass.offsetWidth) {
+//         activeClass = document.querySelector('.u-active');
+//         console.log(activeClass.offsetLeft);
+//         cards[0].style.marginLeft = '-' + activeClass.offsetLeft + 'px';
+//         console.log('right');
+//     }
+// }
+
+// leftButton.addEventListener('click', moveLeft);
+// rightButton.addEventListener('click', moveRight);
+
+// Card Carousel Button
+
 // Horizontal Draggable Carousel Start
 
 function horizontalDragCar(container) {
@@ -42,7 +87,7 @@ function horizontalDragCar(container) {
 
 }
 
-let scrollableArr = ['under-banner-cards', 'courses-carousel', 'category-carousel', 'popular-courses-carousel'];
+let scrollableArr = ['under-banner-cards', 'courses-carousel', 'category-carousel', 'popular-courses-carousel', 'experts-carousel'];
 
 scrollableArr.forEach(element => {
     horizontalDragCar(element);
