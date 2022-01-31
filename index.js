@@ -7,6 +7,30 @@ function hamburger(){
 document.querySelector('.hamBurger').addEventListener('click', hamburger);
 // NavBar Animation DropDown
 
+// Card Carousel On Hover Effect
+
+let cards = document.querySelectorAll('.card-flex');
+let cardsImg = ['education2.png', 'mentorship2.png', 'doc-shop2.png', 'my-docket2.png', 'community2.png', 'upcoming-events2']
+
+window.onload = () => {
+    document.querySelector('.def').classList.remove('invisible');
+};
+
+for (var i = 0; i < cards.length; i++) {
+    cards[i].addEventListener('mouseover', function() {
+        document.querySelector('.card-flex-img-d-' + this.id).classList.toggle('invisible');
+        document.querySelector('.card-flex-img-' + this.id).classList.toggle('invisible');
+    });
+
+    cards[i].addEventListener('mouseout', function() {
+        document.querySelector('.card-flex-img-d-' + this.id).classList.toggle('invisible');
+        document.querySelector('.card-flex-img-' + this.id).classList.toggle('invisible');
+    });
+}
+
+
+// Card Carousel On Hover Effect
+
 // Card-Carousel Button
 
 // let leftButton = document.querySelector('.ubc1');
@@ -87,7 +111,7 @@ function horizontalDragCar(container) {
 
 }
 
-let scrollableArr = ['under-banner-cards', 'courses-carousel', 'category-carousel', 'popular-courses-carousel', 'experts-carousel'];
+let scrollableArr = ['under-banner-cards', 'courses-carousel', 'category-carousel', 'popular-courses-carousel', 'experts-carousel', 'testimonial-carousel'];
 
 scrollableArr.forEach(element => {
     horizontalDragCar(element);
